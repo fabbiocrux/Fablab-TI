@@ -31,9 +31,8 @@ author:
 #appendix: appendix.tex
 
 abstract: |
-  Les entreprises, les universités, les communes, ont toutes parié sur le développement des fab labs. Il s'agit pour elles de favoriser le développement de projets d'innovation au moyen de ces espaces dédiés à l’apprentissage et à la collaboration. Afin de bien comprendre ce que sont les fab labs et les liens qu’ils entretiennent avec leur écosystème nous présentons les différentes facettes de ceux-ci au moyen d’un questionnement systématique. Après une rapide introduction, une analyse des typologies et des ressources disponibles dans les fab labs est donnée. Leur constitution en réseau, ainsi que les modes de gouvernance sont discutées dans un second temps, puis nous mettons en lumière les acteurs de ces lieux et les types de projets qui y sont réalisés. Enfin quelques perspectives du devenir de ses espaces sont proposées..
-
- Abstract:  Companies, universities and municipalities have all bet on the development of fab labs. They want to promote the development of innovation projects through these spaces dedicated to learning and collaboration. In order to fully understand what fab labs are and the links they have with their ecosystem, we present the different facets of them through a systematic questioning. After a quick introduction, an analysis of the typologies and resources available in fab labs is given. Their network constitution, as well as the modes of governance are discussed in a second step, then we highlight the actors of these places and the types of projects which are carried out there. Finally, some perspectives on the future of these spaces are proposed.
+  Les entreprises, les universités, les communes, ont toutes parié sur le développement des fab labs. Il s'agit pour elles de favoriser le développement de projets d'innovation au moyen de ces espaces dédiés à l’apprentissage et à la collaboration. Afin de bien comprendre ce que sont les fab labs et les liens qu’ils entretiennent avec leur écosystème nous présentons les différentes facettes de ceux-ci au moyen d’un questionnement systématique. Après une rapide introduction, une analyse des typologies et des ressources disponibles dans les fab labs est donnée. Leur constitution en réseau, ainsi que les modes de gouvernance sont discutées dans un second temps, puis nous mettons en lumière les acteurs de ces lieux et les types de projets qui y sont réalisés. Enfin quelques perspectives du devenir de ses espaces sont proposées. <br>
+  Abstract:  Companies, universities and municipalities have all bet on the development of fab labs. They want to promote the development of innovation projects through these spaces dedicated to learning and collaboration. In order to fully understand what fab labs are and the links they have with their ecosystem, we present the different facets of them through a systematic questioning. After a quick introduction, an analysis of the typologies and resources available in fab labs is given. Their network constitution, as well as the modes of governance are discussed in a second step, then we highlight the actors of these places and the types of projects which are carried out there. Finally, some perspectives on the future of these spaces are proposed.
       
   **Keywords:** *Prototyping; Distributed recycling; Mechanical strength; PLA*
 # keywords: "Prototyping; Distributed recycling; Mechanical strength; PLA"
@@ -63,7 +62,9 @@ always_allow_html: true
 knitr::opts_chunk$set(echo = FALSE, 
                       fig.retina = 3, 
                       message = FALSE, 
-                      warning = FALSE)
+                      warning = FALSE,
+                      out.width = '60%',
+                      fig.align = 'center')
 
 options(knitr.kable.NA = '')
 library(tidyverse)
@@ -99,7 +100,7 @@ Il va ainsi mettre en évidence le rôle des utilisateurs comme innovateurs.
 En effet, aujourd’hui les évolutions technologiques des trente dernières années ont considérablement accru les opportunités d’innover offertes aux utilisateurs. 
 C’est ainsi que l’on voit se développer fortement, à travers le monde, les mouvements de « maker » (ce terme anglophone générique peut ici être approcher par celui de créateur, constructeur en français).
 Dans cette nouvelle approche, où les utilisateurs des innovations vont être ceux qui les conçoivent, voire les produisent eux-mêmes, il faut complètement repenser l’approche économique, managériale et politique. 
-Pour illustrer l’ampleur de ce mouvement, on peut donner deux exemples récents : le premier est la volonté du gouvernement américain dans son programme de développement économique «Manufacturing USA»^[plus de détails: https://www.manufacturingusa.com/] de voir les « makers » devenir des acteurs à part entière de l’économie en passant de créateur à fabricant; le second réside dans les moyens donnés par la Commission Européenne à la recherche et l’open science pour permettre « d’ouvrir le processus d’innovation à des personnes ayant de l’expérience dans d’autres domaines que le monde universitaire et scientifique. » (https://ec.europa.eu/info/research-and-innovation/strategy/past-research-and-innovation-policy-goals_en). 
+Pour illustrer l’ampleur de ce mouvement, on peut donner deux exemples récents : le premier est la volonté du gouvernement américain dans son programme de développement économique «Manufacturing USA»^[plus de détails: https://www.manufacturingusa.com/] de voir les « makers » devenir des acteurs à part entière de l’économie en passant de créateur à fabricant; le second réside dans les moyens donnés par la Commission Européenne à la recherche et l’open science pour permettre « d’ouvrir le processus d’innovation à des personnes ayant de l’expérience dans d’autres domaines que le monde universitaire et scientifique. » ^[https://ec.europa.eu/info/research-and-innovation/strategy/past-research-and-innovation-policy-goals_en]. 
 
 Si cette production matérielle citoyenne par les « pairs » est aujourd’hui rendu possible et ne cesse de croitre, c’est avant tout grâce à la multiplication des espaces partagés de fabrication tels que les « hackerspaces », « makerspaces » et autres. 
 Parmi tous ces espaces les fab labs ou « laboratoires de fabrication » ont vu leurs nombres exploser des leurs création en 2001 par Neil Gershenfeld directeur du laboratoire « Center for Bits and Atoms » au « Massachussets Institue of Technology (MIT) ». 
@@ -112,6 +113,7 @@ Afin de bien comprendre ce que sous-tend cette idée nous proposons ici d’util
 Dans un premier temps, nous verrons le « Quoi » et plus précisément ce qu’est un fab lab, ses éléments constitutifs matériel ou non, et enfin la diversité de ceux-ci. 
 Dans un second temps nous rappellerons le « Pourquoi » et à travers “le Pour quoi” nous présenterons les projets développés dans les fab labs. Après avoir géolocalisé ces derniers nous détaillerons la gestion et les modes de gouvernances qui s’y appliquent pour fini par donner quelques pistes sur leur possibles évolutions dans le futur.
 
+#	Quoi : qu’est-ce qu’un fab lab ? 
 
 D’un point de vue sémantique, fab lab est l’acronyme de « Fabrication Laboratory » ou laboratoire de fabrication. 
 Ce terme, à forte connotation technique, du principalement à l’usage intense dans ses lieux des machines à contrôle numérique, cache parfois la réalité première d’existence des fab labs qui est avant tout d’offrir des espaces sociotechniques ouverts aux rencontres, aux apprentissages et au partage. 
@@ -129,7 +131,7 @@ Conçu à la base pour un petit groupe d’étudiants, le cours *« How To Make 
 
 Ce cours est une forme d’expérimentation et d’observatoire de ce qu’un groupe d’individus issus de disciplines différentes peut produire par et pour eux-mêmes en manipulant des données et des objets -*‘bits and atomes-*’ s’ils ont accès collectivement à un ensemble d’outils de prototypage. Contrairement aux approches classiques de spécialisation, ce cours vise à enseigner à des groupes d’étudiants pluridisciplinaires comment manipuler les divers outils de conception et de fabrication, et ce dans des démarches de fabrication personnalisées, pour soi-même - connu comme Do-It-Yourself (DIY) ou « faire soit même ».
 
-Les fab labs selon le MIT à Boston sont conçues avec la volonté de créer un réseau mondial distribué répondant à des principes spécifiques codifiés dans « la charte des fab labs » [@Mikhak2002] mise en place par le MIT (http://www.labfab.fr/charte-fablab/). 
+Les fab labs selon le MIT à Boston sont conçues avec la volonté de créer un réseau mondial distribué répondant à des principes spécifiques codifiés dans « la charte des fab labs » [@Mikhak2002] mise en place par le MIT ^[http://www.labfab.fr/charte-fablab/]. 
 L'organisation sous forme de réseau viens du fait que les fab labs visent à la démocratisation des outils de fabrication personnelle en faisant une analogie avec la révolution des ordinateurs portables. 
 Ils promeuvent donc des formes d’apprentissage par le « Faire » ainsi que l’entraide, l’accès et le partage d’information entre usagers. 
 Leur devise commune est « Make, Learn, Share » ou « Fabriquer, Apprendre, Partager ».
@@ -143,10 +145,19 @@ Ils facilitent certaines démarches d’innovation ouverte pour les entreprises 
 La fabrication numérique personnelle peut apporter davantage d’autonomie aux citoyens, pour décentraliser et démultiplier les expérimentations et le développement technologique. 
 Ils permettent également, de créer les conditions nécessaires à la mise en œuvre d’un système de production distribué basé sur une circulation des données au service de productions locales (figure 1).
 
+```{r definition, fig.cap= "Fab lab: lieu et réseau d'équipement, de connaissances et de compétences pour développement de projets. (Adaptation : Pictogrammes de Laura Pandelle sous licence CC-BY-NC-SA) "}
+knitr::include_graphics("Figures/Definition-TI.png")
+```
+
+
+
 Le fab lab en tant qu'espace physique doit être accessible et convivial. Il se veut un lieu où les machines et les utilisateurs doivent cohabiter (figure 2). 
 On observe que les superficies de ces lieux varient généralement entre 20 et 200 m2. 
 En termes d'équipements, les recommandations de la charte concernent les imprimantes 3D, les équipements de prototypage électronique et mécanique, les fraiseuses numériques et les machines de découpe laser et découpe vinyl. 
 
+```{r def2, fig.cap= "Les ressources physiques et humaines au sein des fab labs"}
+knitr::include_graphics("Figures/Definition-TI-02.png")
+```
 
 ## Structure et typologie des fab labs
 
@@ -160,11 +171,21 @@ Par exemple, il est possible de catégoriser les fab labs en les divisant en tro
 (i) et Institutionnels (au sein d’une structure d’enseignement, d’un hôpital, etc.),  
 (ii) Entrepreneurials (au sein d’une entreprise privée ou publique) ou (iii) Militant (grand public pro/amateur, avec une association ou une collectivité territoriale). 
 
-Par ailleurs, @osunyomi2016 ont proposé quatre types de fab labs tels que : basé sur la communauté, basé sur l'éducation, basé sur les business et les "autres" catégories comprenant (espace municipal, installations de recherche indépendantes, et centres scientifiques). 
+Par ailleurs, Osunyomi et al. @Osunyomi2016 ont proposé quatre types de fab labs tels que : basé sur la communauté, basé sur l'éducation, basé sur les business et les "autres" catégories comprenant (espace municipal, installations de recherche indépendantes, et centres scientifiques). 
 
 ```{r table1}
+library(readxl)
+onglet <- excel_sheets("tables/tables1.xlsx")
+table_1 <- read_excel("tables/tables1.xlsx", sheet = onglet[1])
 
+#table_1 <-  table_1 %>%  set_names(" ", "PLA", "Recycled PLA")
+
+table_1 %>% flextable() %>%
+  set_caption("Les typologies et les lieux de fab labs") %>%
+  width(j=1:4, width = c(1, 1.5, 1.5, 1)) %>% 
+  theme_zebra()
 ```
+
 
 
 Chaque type a ses caractéristiques spécifiques, utilisateurs et équipements. 
@@ -183,12 +204,13 @@ Au début de leur apparition, les fab labs ont été implantés dans les grands 
 Les zones rurales restaient éloignées de ces lieux pourtant dédiés à la démocratisation des outils numériques et au partage des connaissances. Dans ce contexte, l’idée d’un fab lab mobile est née pour permettre l’extension de l'apprentissage pratique et des services d'un fab lab fixe à un plus grand nombre d'utilisateurs (grand publique, collèges, lycées, etc.), notamment dans les zones dites « désertes ».
 
 Le fab lab mobile est une plateforme, un camion ou une remorque aménagée, équipée de l'ensemble des machines trouvées dans un fab lab traditionel. Cette disposition permet de se déplacer en missions pour mettre à disposition les moyens numériques et techniques d’un fab lab fixe ainsi que les connaissances de son équipe au service des utilisateurs pour réaliser leurs projets.
-Au Pérou, par exemple, le Floating fab lab est un bateau de narcotrafiquants reconverti en fab lab mobile éco-responsable. Il navigue sur une portion du fleuve Amazone, offrant une éducation et un accès à la technologie aux nombreuses communautés isolées qui y habitent (https://www.makery.info/2016/08/01/en-amazonie-un-fablab-flottant-veut-connecter-jungle-et-technologie/).
+Au Pérou, par exemple, le Floating fab lab est un bateau de narcotrafiquants reconverti en fab lab mobile éco-responsable. Il navigue sur une portion du fleuve Amazone, offrant une éducation et un accès à la technologie aux nombreuses communautés isolées qui y habitent ^[Voir le detail: https://www.makery.info/2016/08/01/en-amazonie-un-fablab-flottant-veut-connecter-jungle-et-technologie/].
 En France, le Nomad’Lab (figure 6) est le 1er fab lab mobile construit en 2014 par l’ENSGSI et l’ERPI comme une extension du Lorraine Fab-Living-Lab® pour servir les zones autour de la région Grand Est.
 
-```{r fablab.mobile}
-
+```{r fablabmobile, fig.cap= "Le Nomad’Lab – 1er fab lab mobile de France (https://factuel.univ-lorraine.fr/node/6779) ", out.width='50%'}
+knitr::include_graphics("Figures/nomadlab.png")
 ```
+
 
 # Pourquoi le fab lab ?
 
@@ -197,7 +219,7 @@ Après avoir clarifier ce qu’était un fab lab nous proposons dans ce paragrap
 ## Les différentes fonctions des fab labs
 
 
-Il est possible d’identifier trois grands types de fonctions pour les fab labs [@Burdeyron2022] ; illustrés dans la figure 4 :
+Il est possible d’identifier trois grands types de fonctions pour les fab labs [@Garnier2020] ; illustrés dans la figure 4 :
 
 - Une fonction de médiation numérique et de formation par les pairs ;
 - Une fonction d’hybridation (des publics, des services et des compétences) ;
@@ -214,10 +236,11 @@ Du fait de la flexibilité des équipements et d'un coût faible, le fab lab per
 Finalement, dans une optique de diffusion de la technologie, la fonction d’hybridation des fab labs permet à certains utilisateurs ou au grand public d’avoir une première connaissance de certaines avancées technologiques telles que l’impression 3D, les objets connectés, etc. 
 En ce sens, le rôle de médiation et de facilitation est un élément clé dans l’écosystème du fab lab. 
 
-
-```{r fablab.functions}
-
+```{r fablabfunctions, fig.cap= "Typologies des fab labs et leurs fonctions principales"}
+knitr::include_graphics("Figures/Definition-TI-03.png")
 ```
+
+
 
 # Où se trouvent les fab labs ?
 
@@ -225,7 +248,7 @@ En 2004 on recensait 6 fab labs. Aujourd'hui on estime leur nombre à près de 2
 
 ## A l’échelle du monde
 
-Au niveau mondial, c’est la Fab Foundation (https://fabfoundation.org/) qui représente le réseau international des fab labs. C’est une organisation américaine à but non lucratif issue du programme CBA fab lab du MIT.  
+Au niveau mondial, c’est la Fab Foundation ^[https://fabfoundation.org/] qui représente le réseau international des fab labs. C’est une organisation américaine à but non lucratif issue du programme CBA fab lab du MIT.  
 Sa mission est de « fournir l'accès aux outils, aux connaissances et aux moyens financiers pour éduquer, innover et inventer en utilisant la technologie et la fabrication numérique pour permettre à chacun de fabriquer (presque) n'importe quoi, et ainsi créer des opportunités pour améliorer les vies et les moyens de subsistance dans le monde entier ».
 
 
@@ -234,14 +257,14 @@ Sa mission est de « fournir l'accès aux outils, aux connaissances et aux moyen
 Le centre commun de recherche (Joint Research Center) et service de la commission européenne chargé de la science et de la connaissance ont publié un rapport technique en 2017 étudiant le mouvement des makers dans l'Union Européenne (UE) [@Rosa2017]. 
 Ce rapport a eu pour objectif « d'évaluer et de quantifier l'ampleur du mouvement des makers à travers l'Europe, en étudiant la distribution et l'activité des fab labs, des hackerspaces et des makerspaces en tant qu'espaces physiques où le phénomène se produit ». Ce rapport a recensé 826 fab labs et makerspaces dans les 28 pays de l’Union Européenne (EU28) répartis géographiquement comme visible dans la figure 5.
 
-```{r Vulca}
-
+```{r Rosa, fig.cap= "Emplacement géographique des fab labs dans l'UE28 en 2017 superposé à la densité de population [10]", out.width='50%'}
+knitr::include_graphics("Figures/Rosa.png")
 ```
 
 
-Les fab labs et les makerspaces ont bénéficiés de nombreux projets européens depuis 2014. A titre d’exemple, le réseau FabLabNet (http://www.fablabnet.net/) a pu être créé en 2016 et financé par le programme européen Interreg Central Europe. 
+Les fab labs et les makerspaces ont bénéficiés de nombreux projets européens depuis 2014. A titre d’exemple, le réseau FabLabNet ^[http://www.fablabnet.net/] a pu être créé en 2016 et financé par le programme européen Interreg Central Europe. 
 Dans ce projet, 9 fab labs de 9 pays d'Europe centrale ont pu collaborer et échanger.
-De manière plus étendue, l’organisation Vulca (https://vulca.eu/) est très présente dans le paysage européen. 
+De manière plus étendue, l’organisation Vulca^[https://vulca.eu/] est très présente dans le paysage européen. 
 C’est une organisation à but non lucratif qui a pour mission de « faire connaître les idées des citoyens aux décideurs politiques de l'UE en utilisant une approche ascendante ». 
 Fondée en 2014, Vulca a commencé à tisser les liens entre les makers en Europe pour créer une communauté avec des activités transfrontalières permettant de mieux mettre en œuvre des solutions collectives. 
 On peut voir le site de l’organisation que régulièrement des séminaires sont organisés. 
@@ -254,20 +277,18 @@ Ce projet a démarré en 2020, il est conçu comme une première étape vers le 
 
 ## Au niveau national 
 
-Le site spécialisé Makery (https://www.makery.info/) recense en 2021, 492 fab labs, coworkingspaces, hakerspaces, makerspaces, tiers-lieux, ateliers de fabrication numérique en France.
+Le site spécialisé Makery^[https://www.makery.info/] recense en 2021, 492 fab labs, coworkingspaces, hakerspaces, makerspaces, tiers-lieux, ateliers de fabrication numérique en France.
 
-De meme, le Réseau Français des Fablabs (RFFLabs) est une organisation à but non lucratif RFFLabs destinée au partage de veille sur les fablabs français et francophones (http://www.fablab.fr/). Il « favorise l’acquisition, la transmission et la production des savoirs et des compétences par l’expérimentation, le faire soi-même, l’échange de pairs à pairs et la pratique collective ». Le Conseil Scientifique du RFFLabs, a mené en 2018 une enquête visant à produire un panorama des fablabs en France. Le travail a été publié dans le livre blanc - Panorama des fab labs en France 2017-2018 [@RFFLabs2017]. 
+De meme, le Réseau Français des Fablabs (RFFLabs) est une organisation à but non lucratif RFFLabs destinée au partage de veille sur les fablabs français et francophones^[http://www.fablab.fr/]. Il « favorise l’acquisition, la transmission et la production des savoirs et des compétences par l’expérimentation, le faire soi-même, l’échange de pairs à pairs et la pratique collective ». Le Conseil Scientifique du RFFLabs, a mené en 2018 une enquête visant à produire un panorama des fablabs en France. Le travail a été publié dans le livre blanc - Panorama des fab labs en France 2017-2018 [@RFFLabs2017]. 
 Ce livre révèle qu’en 2018, il existe 150 structures revendiquant le titre de fab labs. Cette enquête réalisée à partir d’un questionnaire de 136 questions, auquel 59 fab labs ont répondu portait de manière détaillée sur la création, l’animation, l’administration, la gouvernance et l’inscription dans le réseau international de ces structures. 
 
 
 Le site officiel fablabs.io est une plateforme open-source développée depuis 2014 par l'équipe du FabLab à Barcelone et en collaboration avec la Fab Foundation. 
 Nous y trouvons la liste de tous les fab labs membre du réseau MIT, et plus précisément on peut observer que 98 fab labs français sont actifs dans ce réseau, répartis sur le territoire français comme le montre la figure 6. 
 
-
-```{r fablabs.io}
-
+```{r fablabsio, fig.cap= "Répartition des fab labs français membres du réseau MIT selon la plateforme fablabs.io (en décembre 2021)", out.width='50%'}
+knitr::include_graphics("Figures/fablab-france.png")
 ```
-
 
 
 # Qui gère et utilise les fab labs ?
@@ -305,8 +326,8 @@ Néanmoins, quel que soit la typologie du fab lab, on voit apparaître les acteu
 - Les Membres du fab lab : Il s’agit des makers, hackers ou bricoleurs qui utilisent et qui animent le fab lab en permanence. Ils participent à la vie du fab lab et à son évolution. Ils aident aussi le fab manager dans ses tâches en recevant les utilisateurs et en les aidant sur leurs projets. Par ailleurs en tant que membre du fab lab ils ont la possibilité d’utiliser les ressources de ce dernier pour leurs projets personnels. Selon le type de fab lab, ces membres peuvent être une équipe d'employés de la structure, une association, etc.
 
 
-```{r fablab.acteurs}
-
+```{r fablabacteurs, fig.cap= "Les acteurs et les utilisateurs du fab lab (inspiré de https://www.sqylab.org/schema-fablab/)", out.width='55%'}
+knitr::include_graphics("Figures/Acteur.png")
 ```
 
 
@@ -332,7 +353,7 @@ Une fois créé, comment le gérer ? et comment le faire fonctionner pour qu’i
 
 L’association Fab Foundation (https://fabfoundation.org/) propose une feuille de route pour la création d'un fab lab ; qui se résume en 9 étapes :
 
--	Trouver un lieu ou un local pour accueillir le fab lab. Le lieu d'accueil peut appartenir à n'importe quelle organisation gouvernementale, communautaire, académique ou privée. Le fab lab doit être hébergé par une organisation bien implantée pour assurer son succès. Parfois l’association existe avant d’obtenir l’appellation « fab lab » et disposait déjà de locaux, de machines et de partenaires, et il a simplement fallu la transformer [2]. Parfois, une institution souhaite « s’équiper » d’un fab lab et dans ce cas, un local au sein de l’institution sera utilisé pour sa création et son développement. 
+-	Trouver un lieu ou un local pour accueillir le fab lab. Le lieu d'accueil peut appartenir à n'importe quelle organisation gouvernementale, communautaire, académique ou privée. Le fab lab doit être hébergé par une organisation bien implantée pour assurer son succès. Parfois l’association existe avant d’obtenir l’appellation « fab lab » et disposait déjà de locaux, de machines et de partenaires, et il a simplement fallu la transformer [@RFFLabs2017]. Parfois, une institution souhaite « s’équiper » d’un fab lab et dans ce cas, un local au sein de l’institution sera utilisé pour sa création et son développement. 
 
 -	Trouver un Fab Manager (ou une équipe) avec des compétences à la fois techniques pour l’utilisation des outils numériques et de prototypages, mais aussi à l’animation et la facilitation d’une communauté de pratique technique. Ce rôle d’animation est essentiel afin que chaque usager du lieu Fab Lab puisse trouver sa place dans la communauté.
 
@@ -380,8 +401,16 @@ Comme dans les modes de gouvernance des fab labs, il n’existe pas un modèle �
 
 Parmi ces tâches, la recherche de financement peut facilement prendre le pas sur tout le reste. Les fab labs dépendent fortement des sources financières traditionnelles que sont leurs institutions (le gouvernement, l'université et l'industrie). Rares sont les fab labs autofinancés. Malgré ce constat, un programme de financement de fab lab pourrait se faire sous la forme de dons pour un projet, de campagnes de crowdfunding ou d'adhésion payante pour les membres. Sur la base de la littérature, notamment [@You2020; @Etzkowitz2008], les sources de financement des fab labs peuvent être résumées dans le tableau 2.
 
-```{r table.funding}
+```{r table2}
+onglet <- excel_sheets("tables/tables2.xlsx")
+table <- read_excel("tables/tables2.xlsx", sheet = onglet[1])
 
+#table_1 <-  table_1 %>%  set_names(" ", "PLA", "Recycled PLA")
+
+table %>% flextable() %>%
+  set_caption("Sources de financement pour les fab labs (basé sur [16], [17])") %>%
+  width(j=1:2, width = c(2, 2)) %>% 
+  theme_zebra()
 ```
 
 # Le fab lab de demain
@@ -394,43 +423,48 @@ Comme nous l’avons précisé au paragraphe 2.2, le fab lab a trois fonctions p
 
 A l’aube du $XXI_{ème}$ siècle l’explosion d’internet a permis un regain important pour le mouvement « DIY » ou du « faire soit même ». 
 En effet, avec la mise à disposition de tout à chacun d’une masse importante de connaissances dans le cadre privé on a vu se modifier les expériences d'apprentissage qui sont dès lors fortement devenues « individuelles » et cloisonnées. 
-Avec le développement des fab labs et de leur principe de partage on assiste à un retour à des apprentissages partagés mais avec désormais un individu qui se trouve au cœur de la démarche et riche de plus de compétences individuelles. Le fab lab va ainsi, comme nous l’avons montré précédemment, recréer du lien entre les makers et adepte de l’idéologie du faire soit même. Au-delà de l’aspect fédérateur pour les individus le fab lab se positionne aussi comme un élément fédérateur pour les communautés de pratique qui impliquent les acteurs locaux. On passe ainsi de la notion de « DIY » à celle de « DIT » ou du « faire ensemble ». Le DIT est une approche novatrice capitalisant sur les connaissances et les idées de conception et d'ingénierie provenant de différentes disciplines et parfois même de nouveaux acteurs. L'approche DIT sera dans le futur alimentée dans les fab labs par l’écosystème environnant et permettra de canaliser la créativité des usagers de l’espace. 
+Avec le développement des fab labs et de leur principe de partage on assiste à un retour à des apprentissages partagés mais avec désormais un individu qui se trouve au cœur de la démarche et riche de plus de compétences individuelles. Le fab lab va ainsi, comme nous l’avons montré précédemment, recréer du lien entre les makers et adepte de l’idéologie du faire soit même. Au-delà de l’aspect fédérateur pour les individus le fab lab se positionne aussi comme un élément fédérateur pour les communautés de pratique qui impliquent les acteurs locaux. On passe ainsi de la notion de « DIY » à celle de « DIT » ou du « faire ensemble » [@Dupont2022]. 
+Le DIT est une approche novatrice capitalisant sur les connaissances et les idées de conception et d'ingénierie provenant de différentes disciplines et parfois même de nouveaux acteurs. 
+L'approche DIT sera dans le futur alimentée dans les fab labs par l’écosystème environnant et permettra de canaliser la créativité des usagers de l’espace. 
 
 
 ## Un outil au service de l’économie circulaire
 
 D’un point de vue sociétale le fab lab de demain va aussi jouer un rôle en tant qu’élément de la chaine de valeur pour l’application plus citoyenne et locale de solutions et projets mondiaux. 
 En effet comme nous l’avons vu dans la typologie des fab labs ceux-ci ont su se spécialiser en fonction de leur localisation et des besoins de leurs membres. 
-Si l’on considère les problèmes de sociétés actuels on voit que les fab labs deviennent un soutien pour la co-création de solutions circulaires autour de défis spécifiques. 
+Si l’on considère les problèmes de sociétés actuels on voit que les fab labs deviennent un soutien pour la co-création de solutions circulaires autour de défis spécifiques [@Kasmi2021]. 
 Ils fournissent des espaces sûrs aux citoyens et aux communautés pour exprimer leurs besoins, concevoir, prototyper et expérimenter des solutions pour que les transitions se produisent et aient un impact réel et positif sur leurs territoires. 
 <!-- INEDIT -->
-Nous pouvons ici citer à titre d’exemple l’apport du Lorraine Fab Living Lab à travers le programme de recherche européen Inedit. 
+Nous pouvons ici citer à titre d’exemple l’apport du Lorraine Fab Living Lab à travers le programme de recherche européen Inedit^[Cordis: https://cordis.europa.eu/project/id/869952]. 
 Ce fab lab, en collaboration avec plusieurs partenaires européens, développe des solutions liant les principes théoriques et pratiques de l’économie circulaire aux problématiques des citoyens et usagers. 
-A travers le réseau des fab labs, ce laboratoire coproduit des outils nécessaires pour la mise en œuvre des écosystèmes locaux de circularité dans d'autres villes et régions. Cette action spécifique rejoint le mouvement fab city [@fabcity] et permet un nouveau modèle urbain, économique, social et industriel qui délocalise la production vers la ville et son environnement. 
+A travers le réseau des fab labs, ce laboratoire coproduit des outils nécessaires pour la mise en œuvre des écosystèmes locaux de circularité dans d'autres villes et régions. 
+Cette action spécifique rejoint le mouvement fab city [@Fabcity2022] et permet un nouveau modèle urbain, économique, social et industriel qui délocalise la production vers la ville et son environnement. 
 
 Le fab lab de demain, en donnant la priorité à la création d'impacts sociaux et environnementaux positifs, va donc collecter et utiliser des connaissances mondiales afin de modifier les écosystèmes locaux. 
-Cette approche de fab lab à fabrication circulaire permettra ainsi de rompre avec le paradigme industriel. En couplant le concept d'apprentissage par la pratique avec les principes de l’économie circulaire à savoir repenser, réutiliser, refaire et recycler les fab labs vont accroître la résilience des écosystèmes auxquels ils participent. 
+Cette approche de fab lab à fabrication circulaire permettra ainsi de rompre avec le paradigme industriel.
+En couplant le concept d'apprentissage par la pratique avec les principes de l’économie circulaire à savoir repenser, réutiliser, refaire et recycler les fab labs vont accroître la résilience des écosystèmes auxquels ils participent. 
 Toutefois, cela signifie reconnaître et accepter que les activités et le travail peuvent être effectués par des makers dans un espace non dédié à une seule tâche. 
 Cultiver la communauté, non seulement au sein du fab lab, mais aussi au-delà, permettra une réflexion interdisciplinaire, essentielle pour acquérir, créer et tester des matériaux et des projets, mais aussi pour créer une idéologie durable.
 
 ## Les transformations et spécialisations possibles
 
-Si l’on revient au fondateur du concept des fab labs à savoir Neil Gershenfeld, les fab labs devraient atteindre « le nombre du million d’ici à dix ans car les fab labs pourront fabriquer des machines en vue d’équiper d’autres fab labs. Puis vous viendrez dans les fab labs, non plus pour fabriquer un objet, mais pour fabriquer un fab lab" [@MitNeil]. 
+Si l’on revient au fondateur du concept des fab labs à savoir Neil Gershenfeld, les fab labs devraient atteindre « le nombre du million d’ici à dix ans car les fab labs pourront fabriquer des machines en vue d’équiper d’autres fab labs. Puis vous viendrez dans les fab labs, non plus pour fabriquer un objet, mais pour fabriquer un fab lab" [@MITNews2016]. 
 L’idée derrière la multiplication des fab labs est comme dit précédemment, de permettre aux villes de produire localement. 
 Même si rien n’assure de cette évolution exponentielle, on observe déjà les prémices des transformations et spécialisations qui vont permettre aux fab labs de se développer grâce à de nouveau modèles économiques adaptés aux contextes socio-économiques où ils se situent.
 Pour ce qui est des fab labs dans les pays développés, on observe une prise de conscience écologique de plus en plus présente et un changement important dans le positionnement des adhérents. 
 Même si pendant longtemps, la valeur a toujours été associée à l'avantage économique et aux produits physiques, les citoyens voient aujourd’hui de plus en plus que la valeur peut également être créée dans les réseaux. Parallèlement aux changements très récents dans la perception du public des coûts, cela signifie que les personnes deviennent plus conscientes des coûts non économiques des produits comme les coûts environnementaux et sociaux. 
 La tendance sociale qui influence le comportement des makers est le changement des valeurs, ce qui signifie qu’ils accordent moins de valeur aux biens matériels et plus aux aspects immatériels tels que le bien-être individuel, le bonheur, la satisfaction de vivre, la réalisation de soi, mais aussi la protection de l'environnement et la santé. 
 
-Dans ses sociétés, où les grands risques matériels (santé, chômage, etc..) pour la vie sont couverts par l'État, il est évident que les besoins immatériels prennent le pas sur les besoins matériels [@giovannini]. 
+Dans ses sociétés, où les grands risques matériels (santé, chômage, etc..) pour la vie sont couverts par l'État, il est évident que les besoins immatériels prennent le pas sur les besoins matériels [@Giovannini2011]. 
 Au cours de ce changement de valeurs, la consommation éthique prend de plus en plus d'importance. Le terme consommation éthique réunit un comportement de consommation durable, vert, respectueux de l'environnement et pro-social. 
 Les fab labs, à conditions de résoudre les problématiques juridiques et sanitaires, vont répondre à ces nouveaux consommateurs. 
-Pour illustrer cette transformation citons l’adaptation des fab labs et de leur espace en nouveaux espaces de « réparation » et d’allongement de la durée de vie des biens manufacturés. Au-delà de la simple « réparation » les fab labs vont comme le souligne l’ADEME, avoir « un rôle de sensibilisation et d’expérimentation, permettant d’une part de développer la demande et d’autre part de continuer à expérimenter ce qui est essentiel pour faciliter l’émergence des pratiques » [@ademe].
+Pour illustrer cette transformation citons l’adaptation des fab labs et de leur espace en nouveaux espaces de « réparation » et d’allongement de la durée de vie des biens manufacturés. Au-delà de la simple « réparation » les fab labs vont comme le souligne l’ADEME, avoir « un rôle de sensibilisation et d’expérimentation, permettant d’une part de développer la demande et d’autre part de continuer à expérimenter ce qui est essentiel pour faciliter l’émergence des pratiques » [@ADEME2017].
 
 
 Un autre enjeu écologique bien pris en compte par de nombreux fab labs est la pollution croissante due au développement important de la fabrication additive. Actuellement, l'utilisation de plastiques d'origine biologique, tels que l'acide polylactique (PLA), est encouragée et dans un futur proche les fablabs seront équipés de machines pour recycler les ressources d'impression. 
-Des initiatives comme le réseau Precious Plastic développent des prototypes et des tutoriels pour concevoir des machines capables de recycler les résidus de plastique par injection ou en filament d'imprimante 3D comme le propose aussi déjà certains fab labs tels que le LF2L à Nancy (France) ou le Fab Lab Barcelona à Barcelone (Espagne). 
-Dans les fab labs situés dans des pays en voie de développements on voit que ces espaces permettent avant tout de compenser la fracture numérique existante avec les pays développés. Ces fab labs vont servir de lieu d’enseignement comme c’est le cas au Togo au centre numérique des savanes togolaises qui forme les habitants de la région aux métiers du numérique, à l’utilisation d'internet.
+Des initiatives comme le réseau Precious Plastic^[Voir en détail: https://preciousplastic.com/] développent des prototypes et des tutoriels pour concevoir des machines capables de recycler les résidus de plastique par injection ou en filament d'imprimante 3D comme le propose aussi déjà certains fab labs tels que le LF2L à Nancy (France) ou le Fab Lab Barcelona à Barcelone (Espagne). 
+Dans les fab labs situés dans des pays en voie de développements on voit que ces espaces permettent avant tout de compenser la fracture numérique existante avec les pays développés. 
+Ces fab labs vont servir de lieu d’enseignement comme c’est le cas au Togo au centre numérique des savanes togolaises qui forme les habitants de la région aux métiers du numérique, à l’utilisation d'internet.
 Au-delà de la formation ces espaces vont aussi servir l’innovation et l’entreprenariat en soutenant les initiatives locales et permettre la création de micro entreprise tel qu’a Kochi en inde où se modèle se développe au niveau de mini fab labs eux-mêmes connectés à un super fab lab servant de chef de file.
 
 #	Conclusion
@@ -440,15 +474,6 @@ Cette capacité qui s’exprimait autrefois principalement en entreprise se voit
 Ces derniers, grâces aux nouvelles technologies, sont devenu de véritables espaces de travail collaboratif partagés permettant tout à la fois une montée en compétences de leurs membres et le développement de projet en lien avec des entreprises et des institutions publiques. 
 Leur distribution à travers les territoires et leur positionnement à l’intersection des sphères privées et publiques en font un outil privilégié pour une meilleure participations des citoyens aux grands enjeux sociétaux. 
 A condition de surmonter les problématiques de gouvernance, de fiabiliser leur modèle d’affaires et de trouver le bon degré d’ouverture de ces lieux, les fab labs joueront certainement dans le futur un rôle important localement pour le développement des entreprises mais aussi au sein des territoires en tant qu’intermédiaire avec les pouvoirs publics centralisés.  
-
-
-
-
-
-
-
-
-
 
 
 

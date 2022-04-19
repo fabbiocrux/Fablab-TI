@@ -80,6 +80,10 @@ library(flextable)
 # df2bib(library, file = "Refs.bib", append = FALSE)
 
 set_flextable_defaults(fonts_ignore=TRUE)
+
+
+library(usethis)
+proj_sitrep()
 ```
 # Introduction
 
